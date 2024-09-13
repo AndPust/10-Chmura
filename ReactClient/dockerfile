@@ -2,11 +2,9 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
-RUN npm ci
-
-COPY . .
-RUN npm run build
+COPY reactApplication/ reactApplication/
+WORKDIR /app/reactApplication
+RUN npm install
 
 EXPOSE 3000
 

@@ -1,14 +1,10 @@
 FROM gradle:7.4-jdk17-alpine AS build
 
 WORKDIR /app
-COPY . .
+COPY kotlinBackend/ kotlinBackend/
+WORKDIR /app/kotlinBackend
 RUN ./gradlew build --no-daemon
-
-FROM openjdk:17-jdk-slim
-
-WORKDIR /app
-COPY --from=build /app/build/libs/*.jar ./app.jar
 
 EXPOSE 9000
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["./gradlew", "run"]

@@ -7,6 +7,9 @@ import useItems from "./itemHook";
 import Login from "./components/login";
 import Register from "./components/register";
 
+// Add this line at the top of your file, after the imports
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:9000';
+
 const App = () => {
   const [items] = useItems();
   const [renderState, setRenderState] = useState("store");
@@ -59,7 +62,7 @@ const App = () => {
         headers: { "Content-Type": "application/json", "key": "1" },
         body: JSON.stringify(data)
       };
-      fetch("http://localhost:9000/api/payment", requestOptions)
+      fetch(`${BACKEND_URL}/api/payment`, requestOptions)
     }
     setSubmitted(true);
   }
@@ -80,7 +83,7 @@ const App = () => {
 
   const HandleLogin = async (email, password) => {
     try {
-      const response = await fetch("http://localhost:9000/api/login", {
+      const response = await fetch(`${BACKEND_URL}/api/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({'email': email, 'password': password }),
@@ -109,7 +112,7 @@ const App = () => {
   const HandleRegister = async (email, password, firstName, lastName) => {
     try {
       console.log("Registering user:", email, password, firstName, lastName);
-      const response = await fetch("http://localhost:9000/api/register", {
+      const response = await fetch(`${BACKEND_URL}/api/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({'email': email, 'password': password, 'firstName': firstName, 'lastName': lastName }),
@@ -136,7 +139,7 @@ const App = () => {
     }
     try {
       const cartString = JSON.stringify(cart);
-      const response = await fetch("http://localhost:9000/api/update_cart", {
+      const response = await fetch(`${BACKEND_URL}/api/update_cart`, {
         method: "POST",
         headers: { 
           "Content-Type": "application/json", 
@@ -166,7 +169,7 @@ const App = () => {
     }
   
     try {
-      const response = await fetch("http://localhost:9000/api/get_cart", {
+      const response = await fetch(`${BACKEND_URL}/api/get_cart`, {
         method: "GET",
         headers: {
           "Authorization": `Bearer ${authToken}`,
