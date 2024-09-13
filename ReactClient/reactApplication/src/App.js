@@ -7,8 +7,7 @@ import useItems from "./itemHook";
 import Login from "./components/login";
 import Register from "./components/register";
 
-// Add this line at the top of your file, after the imports
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:9000';
+import { BACKEND_URL } from './config';
 
 const App = () => {
   const [items] = useItems();

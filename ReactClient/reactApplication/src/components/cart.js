@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 //import cartRequest from "../cartRequest"
 import "../styles/cart.css";
+import { BACKEND_URL } from '../config';
 
 const Cart = ({ cart, setCart, useCart, setRenderState, handleChange }) => {
   const [price, setPrice] = useState(0);
@@ -31,7 +32,7 @@ const Cart = ({ cart, setCart, useCart, setRenderState, handleChange }) => {
         headers: { "Content-Type": "application/json", "key": "1" },
         body: JSON.stringify(data)
       };
-      fetch("http://localhost:9000/api/cart", requestOptions)
+      fetch(`${BACKEND_URL}/api/cart`, requestOptions)
 
       setRenderState("payment")
   };
