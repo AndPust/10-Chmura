@@ -1,0 +1,686 @@
+2024-09-12 19:01:08.237 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-12 19:01:11.741 [main] INFO  ktor.application - Application auto-reloaded in 3.471 seconds.
+2024-09-12 19:01:14.076 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-12 19:41:20.610 [eventLoopGroupProxy-4-6] INFO  ktor.application - Incoming payment request: {"firstName":"ab","lastName":"ab","email":"ab"}
+2024-09-12 19:41:24.316 [eventLoopGroupProxy-4-6] INFO  ktor.application - Incoming payment request: {"firstName":"asd","lastName":"ab","email":"ab"}
+2024-09-12 21:13:28.969 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-12 21:13:32.768 [main] INFO  ktor.application - Application auto-reloaded in 3.769 seconds.
+2024-09-12 21:13:35.117 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-12 22:06:51.891 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-12 22:06:55.962 [main] INFO  ktor.application - Application auto-reloaded in 4.04 seconds.
+2024-09-12 22:06:58.582 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-12 22:56:29.734 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-12 22:56:33.486 [main] INFO  ktor.application - Application auto-reloaded in 3.725 seconds.
+2024-09-12 22:56:35.778 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-12 22:57:00.243 [eventLoopGroupProxy-4-3] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-12 23:09:16.150 [eventLoopGroupProxy-4-4] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-12 23:16:24.657 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-12 23:16:28.458 [main] INFO  ktor.application - Application auto-reloaded in 3.769 seconds.
+2024-09-12 23:16:30.799 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-12 23:16:34.820 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-12 23:16:51.892 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-12 23:20:47.474 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-12 23:20:51.691 [main] INFO  ktor.application - Application auto-reloaded in 4.185 seconds.
+2024-09-12 23:20:54.043 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-12 23:21:13.680 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-12 23:21:18.714 [eventLoopGroupProxy-4-1] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-12 23:21:18.716 [eventLoopGroupProxy-4-1] INFO  ktor.application - UserCredentials(email=a@ab.pl, password=123, firstName=a, lastName=a)
+2024-09-12 23:21:51.350 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-12 23:21:51.352 [eventLoopGroupProxy-4-1] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-12 23:21:51.352 [eventLoopGroupProxy-4-1] INFO  ktor.application - UserCredentials(email=a@ab.pl, password=123, firstName=aa, lastName=aaa)
+2024-09-12 23:22:39.005 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-12 23:22:39.006 [eventLoopGroupProxy-4-1] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-12 23:22:39.007 [eventLoopGroupProxy-4-1] INFO  ktor.application - UserCredentials(email=abab@b.pl, password=123, firstName=aaa, lastName=bbb)
+2024-09-12 23:32:59.060 [eventLoopGroupProxy-4-2] ERROR ktor.application - Unhandled: POST - /api/login
+kotlinx.serialization.MissingFieldException: Fields [firstName, lastName] are required for type with serial name 'com.example.UserCredentials', but they were missing
+	at kotlinx.serialization.internal.PluginExceptionsKt.throwMissingFieldException(PluginExceptions.kt:20)
+	at com.example.UserCredentials.<init>(Application.kt:26)
+	at com.example.UserCredentials$$serializer.deserialize(Application.kt:26)
+	at com.example.UserCredentials$$serializer.deserialize(Application.kt:26)
+	at kotlinx.serialization.json.internal.PolymorphicKt.decodeSerializableValuePolymorphic(Polymorphic.kt:59)
+	at kotlinx.serialization.json.internal.StreamingJsonDecoder.decodeSerializableValue(StreamingJsonDecoder.kt:36)
+	at kotlinx.serialization.json.Json.decodeFromString(Json.kt:100)
+	at io.ktor.serialization.kotlinx.KotlinxSerializationConverter.deserialize(KotlinxSerializationConverter.kt:55)
+	at io.ktor.server.plugins.contentnegotiation.RequestConverterKt$convertRequestBody$1$1.invokeSuspend(RequestConverter.kt:38)
+	at io.ktor.server.plugins.contentnegotiation.RequestConverterKt$convertRequestBody$1$1.invoke(RequestConverter.kt)
+	at io.ktor.server.plugins.contentnegotiation.RequestConverterKt$convertRequestBody$1$1.invoke(RequestConverter.kt)
+	at io.ktor.server.application.OnCallReceiveContext.transformBody(KtorCallContexts.kt:65)
+	at io.ktor.server.plugins.contentnegotiation.RequestConverterKt$convertRequestBody$1.invokeSuspend(RequestConverter.kt:22)
+	at io.ktor.server.plugins.contentnegotiation.RequestConverterKt$convertRequestBody$1.invoke(RequestConverter.kt)
+	at io.ktor.server.plugins.contentnegotiation.RequestConverterKt$convertRequestBody$1.invoke(RequestConverter.kt)
+	at io.ktor.server.application.PluginBuilder$onCallReceive$3.invokeSuspend(PluginBuilder.kt:165)
+	at io.ktor.server.application.PluginBuilder$onCallReceive$3.invoke(PluginBuilder.kt)
+	at io.ktor.server.application.PluginBuilder$onCallReceive$3.invoke(PluginBuilder.kt)
+	at io.ktor.server.application.PluginBuilder$onCallReceive$2.invokeSuspend(PluginBuilder.kt:109)
+	at io.ktor.server.application.PluginBuilder$onCallReceive$2.invoke(PluginBuilder.kt)
+	at io.ktor.server.application.PluginBuilder$onCallReceive$2.invoke(PluginBuilder.kt)
+	at io.ktor.server.application.PluginBuilder$onDefaultPhase$1.invokeSuspend(PluginBuilder.kt:217)
+	at io.ktor.server.application.PluginBuilder$onDefaultPhase$1.invoke(PluginBuilder.kt)
+	at io.ktor.server.application.PluginBuilder$onDefaultPhase$1.invoke(PluginBuilder.kt)
+	at io.ktor.server.application.PluginBuilder$onDefaultPhaseWithMessage$1$1$1.invokeSuspend(PluginBuilder.kt:200)
+	at io.ktor.server.application.PluginBuilder$onDefaultPhaseWithMessage$1$1$1.invoke(PluginBuilder.kt)
+	at io.ktor.server.application.PluginBuilder$onDefaultPhaseWithMessage$1$1$1.invoke(PluginBuilder.kt)
+	at io.ktor.util.debug.ContextUtilsKt.addToContextInDebugMode(ContextUtils.kt:30)
+	at io.ktor.server.application.PluginBuilder$onDefaultPhaseWithMessage$1$1.invokeSuspend(PluginBuilder.kt:196)
+	at io.ktor.server.application.PluginBuilder$onDefaultPhaseWithMessage$1$1.invoke(PluginBuilder.kt)
+	at io.ktor.server.application.PluginBuilder$onDefaultPhaseWithMessage$1$1.invoke(PluginBuilder.kt)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:123)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:81)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:101)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:77)
+	at io.ktor.server.request.ApplicationReceiveFunctionsKt.receive(ApplicationReceiveFunctions.kt:86)
+	at com.example.ApplicationKt$main$1$4$5.invokeSuspend(Application.kt:130)
+	at com.example.ApplicationKt$main$1$4$5.invoke(Application.kt)
+	at com.example.ApplicationKt$main$1$4$5.invoke(Application.kt)
+	at io.ktor.server.routing.Route$buildPipeline$1$1.invokeSuspend(Route.kt:116)
+	at io.ktor.server.routing.Route$buildPipeline$1$1.invoke(Route.kt)
+	at io.ktor.server.routing.Route$buildPipeline$1$1.invoke(Route.kt)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:123)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:81)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:101)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:77)
+	at io.ktor.server.routing.Routing$executeResult$$inlined$execute$1.invokeSuspend(Pipeline.kt:478)
+	at io.ktor.server.routing.Routing$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.routing.Routing$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:17)
+	at io.ktor.server.routing.Routing.executeResult(Routing.kt:174)
+	at io.ktor.server.routing.Routing.interceptor(Routing.kt:49)
+	at io.ktor.server.routing.Routing$Plugin$install$1.invokeSuspend(Routing.kt:124)
+	at io.ktor.server.routing.Routing$Plugin$install$1.invoke(Routing.kt)
+	at io.ktor.server.routing.Routing$Plugin$install$1.invoke(Routing.kt)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:123)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:81)
+	at io.ktor.server.engine.BaseApplicationEngineKt$installDefaultTransformationChecker$1.invokeSuspend(BaseApplicationEngine.kt:122)
+	at io.ktor.server.engine.BaseApplicationEngineKt$installDefaultTransformationChecker$1.invoke(BaseApplicationEngine.kt)
+	at io.ktor.server.engine.BaseApplicationEngineKt$installDefaultTransformationChecker$1.invoke(BaseApplicationEngine.kt)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:123)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:81)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:101)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:77)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:478)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:17)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invokeSuspend(DefaultEnginePipeline.kt:118)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:123)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:81)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:101)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:77)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:478)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:17)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1.invokeSuspend(NettyApplicationCallHandler.kt:119)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1.invoke(NettyApplicationCallHandler.kt)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1.invoke(NettyApplicationCallHandler.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at io.ktor.server.netty.NettyApplicationCallHandler.handleRequest(NettyApplicationCallHandler.kt:37)
+	at io.ktor.server.netty.NettyApplicationCallHandler.channelRead(NettyApplicationCallHandler.kt:29)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:61)
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:370)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda-1$lambda-0(NettyApplicationEngine.kt:263)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2024-09-12 23:34:11.939 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-12 23:34:15.948 [main] INFO  ktor.application - Application auto-reloaded in 3.974 seconds.
+2024-09-12 23:34:18.227 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-12 23:34:25.625 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-12 23:34:29.913 [eventLoopGroupProxy-4-1] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-12 23:34:29.914 [eventLoopGroupProxy-4-1] INFO  ktor.application - UserCredentials(email=ab@pl.pl, password=123, firstName=aa, lastName=bb)
+2024-09-13 01:13:02.112 [eventLoopGroupProxy-4-3] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-13 01:13:02.113 [eventLoopGroupProxy-4-3] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-13 01:13:02.114 [eventLoopGroupProxy-4-3] INFO  ktor.application - UserCredentials(email=a@b.pl, password=123, firstName=aa, lastName=bb)
+2024-09-13 03:38:43.933 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 03:38:48.216 [main] INFO  ktor.application - Application auto-reloaded in 4.251 seconds.
+2024-09-13 03:38:50.543 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 03:42:56.666 [eventLoopGroupProxy-4-2] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-13 03:42:57.049 [eventLoopGroupProxy-4-2] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-13 03:42:57.049 [eventLoopGroupProxy-4-2] INFO  ktor.application - UserCredentials(email=a@a.pl, password=123, firstName=ab, lastName=ba)
+2024-09-13 03:46:53.160 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 03:46:57.548 [main] INFO  ktor.application - Application auto-reloaded in 4.357 seconds.
+2024-09-13 03:46:59.906 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 03:47:47.736 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-13 03:47:47.795 [eventLoopGroupProxy-4-1] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-13 03:47:47.796 [eventLoopGroupProxy-4-1] INFO  ktor.application - UserCredentials(email=a@a.pl, password=123, firstName=a, lastName=a)
+2024-09-13 03:48:08.568 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 03:48:08.575 [eventLoopGroupProxy-4-1] INFO  ktor.application - principal zaciagniety
+2024-09-13 03:48:08.594 [eventLoopGroupProxy-4-1] INFO  ktor.application - Email zaciagniety: a@a.pl
+2024-09-13 03:48:08.634 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart zaciagniety: [{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":1}]
+2024-09-13 03:48:08.635 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlozono do slownika
+2024-09-13 03:50:17.236 [eventLoopGroupProxy-4-2] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 03:50:17.237 [eventLoopGroupProxy-4-2] INFO  ktor.application - principal zaciagniety
+2024-09-13 03:50:17.238 [eventLoopGroupProxy-4-2] INFO  ktor.application - Email zaciagniety: a@a.pl
+2024-09-13 03:50:17.239 [eventLoopGroupProxy-4-2] INFO  ktor.application - Cart zaciagniety: []
+2024-09-13 03:50:17.240 [eventLoopGroupProxy-4-2] INFO  ktor.application - Wlozono do slownika
+2024-09-13 03:54:32.678 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 03:54:36.791 [main] INFO  ktor.application - Application auto-reloaded in 4.082 seconds.
+2024-09-13 03:54:39.140 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 03:57:27.555 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-13 03:57:27.611 [eventLoopGroupProxy-4-1] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-13 03:57:27.612 [eventLoopGroupProxy-4-1] INFO  ktor.application - UserCredentials(email=a@a.pl, password=123, firstName=Andrzej, lastName=Pustelnik)
+2024-09-13 03:57:51.359 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 03:57:51.367 [eventLoopGroupProxy-4-1] INFO  ktor.application - principal zaciagniety
+2024-09-13 03:57:51.391 [eventLoopGroupProxy-4-1] INFO  ktor.application - Email zaciagniety: a@a.pl
+2024-09-13 03:57:51.436 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart zaciagniety: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":6}]
+2024-09-13 03:57:51.437 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlozono do slownika
+2024-09-13 04:05:24.495 [eventLoopGroupProxy-4-2] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-13 04:05:24.497 [eventLoopGroupProxy-4-2] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-13 04:05:24.498 [eventLoopGroupProxy-4-2] INFO  ktor.application - UserCredentials(email=a@a.pl, password=123, firstName=Andrzej, lastName=Pustelnik)
+2024-09-13 04:06:36.807 [eventLoopGroupProxy-4-2] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-13 04:06:36.808 [eventLoopGroupProxy-4-2] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-13 04:06:36.809 [eventLoopGroupProxy-4-2] INFO  ktor.application - UserCredentials(email=a@a.pl, password=123, firstName=Andrzej, lastName=Pustelnik)
+2024-09-13 04:13:20.747 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 04:13:25.069 [main] INFO  ktor.application - Application auto-reloaded in 4.269 seconds.
+2024-09-13 04:13:27.466 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 04:33:03.829 [eventLoopGroupProxy-4-3] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-13 04:33:03.885 [eventLoopGroupProxy-4-3] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-13 04:33:03.886 [eventLoopGroupProxy-4-3] INFO  ktor.application - UserCredentials(email=a@a.pl, password=123, firstName=a, lastName=a)
+2024-09-13 04:33:13.638 [eventLoopGroupProxy-4-3] INFO  ktor.application - Cart retrievowany: null
+2024-09-13 04:34:03.415 [eventLoopGroupProxy-4-3] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 04:34:03.416 [eventLoopGroupProxy-4-3] INFO  ktor.application - principal zaciagniety
+2024-09-13 04:34:03.416 [eventLoopGroupProxy-4-3] INFO  ktor.application - Email zaciagniety: a@a.pl
+2024-09-13 04:34:03.469 [eventLoopGroupProxy-4-3] INFO  ktor.application - Cart zaciagniety: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":5}]
+2024-09-13 04:34:03.469 [eventLoopGroupProxy-4-3] INFO  ktor.application - Wlozono do slownika
+2024-09-13 04:34:13.357 [eventLoopGroupProxy-4-3] INFO  ktor.application - Cart retrievowany: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":5}]
+2024-09-13 04:34:19.251 [eventLoopGroupProxy-4-3] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 04:34:19.252 [eventLoopGroupProxy-4-3] INFO  ktor.application - principal zaciagniety
+2024-09-13 04:34:19.252 [eventLoopGroupProxy-4-3] INFO  ktor.application - Email zaciagniety: a@a.pl
+2024-09-13 04:34:19.254 [eventLoopGroupProxy-4-3] INFO  ktor.application - Cart zaciagniety: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":5}]
+2024-09-13 04:34:19.254 [eventLoopGroupProxy-4-3] INFO  ktor.application - Wlozono do slownika
+2024-09-13 04:34:23.968 [eventLoopGroupProxy-4-3] INFO  ktor.application - Cart retrievowany: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":5}]
+2024-09-13 04:36:44.170 [eventLoopGroupProxy-4-4] TRACE io.ktor.auth.jwt - Token verification failed: The Token has expired on Fri Sep 13 04:35:23 CEST 2024.
+2024-09-13 04:36:59.264 [eventLoopGroupProxy-4-4] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-13 04:36:59.265 [eventLoopGroupProxy-4-4] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-13 04:36:59.266 [eventLoopGroupProxy-4-4] INFO  ktor.application - UserCredentials(email=b@b.pl, password=123, firstName=b, lastName=b)
+2024-09-13 04:37:33.945 [eventLoopGroupProxy-4-4] INFO  ktor.application - Cart retrievowany: null
+2024-09-13 04:37:36.473 [eventLoopGroupProxy-4-4] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 04:37:36.474 [eventLoopGroupProxy-4-4] INFO  ktor.application - principal zaciagniety
+2024-09-13 04:37:36.475 [eventLoopGroupProxy-4-4] INFO  ktor.application - Email zaciagniety: b@b.pl
+2024-09-13 04:37:36.476 [eventLoopGroupProxy-4-4] INFO  ktor.application - Cart zaciagniety: [{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":5},{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":8},{"id":1,"name":"Copper","description":"Limited edition periodic copper","price":12,"img":"/resources/copper.jpg","qty":4},{"id":5,"name":"Titanium","description":"For bones, bicycles, rockets!","price":55,"img":"/resources/titanium.jpg","qty":3},{"id":6,"name":"Mercury","description":"Careful not to spill it.","price":21,"img":"/resources/mercury.jpg","qty":5}]
+2024-09-13 04:37:36.482 [eventLoopGroupProxy-4-4] INFO  ktor.application - Wlozono do slownika
+2024-09-13 04:37:43.143 [eventLoopGroupProxy-4-4] INFO  ktor.application - Cart retrievowany: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":5}]
+2024-09-13 04:37:48.168 [eventLoopGroupProxy-4-4] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 04:37:48.169 [eventLoopGroupProxy-4-4] INFO  ktor.application - principal zaciagniety
+2024-09-13 04:37:48.171 [eventLoopGroupProxy-4-4] INFO  ktor.application - Email zaciagniety: a@a.pl
+2024-09-13 04:37:48.173 [eventLoopGroupProxy-4-4] INFO  ktor.application - Cart zaciagniety: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":5}]
+2024-09-13 04:37:48.174 [eventLoopGroupProxy-4-4] INFO  ktor.application - Wlozono do slownika
+2024-09-13 04:37:53.960 [eventLoopGroupProxy-4-4] INFO  ktor.application - Cart retrievowany: [{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":5},{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":8},{"id":1,"name":"Copper","description":"Limited edition periodic copper","price":12,"img":"/resources/copper.jpg","qty":4},{"id":5,"name":"Titanium","description":"For bones, bicycles, rockets!","price":55,"img":"/resources/titanium.jpg","qty":3},{"id":6,"name":"Mercury","description":"Careful not to spill it.","price":21,"img":"/resources/mercury.jpg","qty":5}]
+2024-09-13 05:16:36.809 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 05:16:45.439 [main] INFO  ktor.application - Application auto-reloaded in 8.597 seconds.
+2024-09-13 05:16:47.317 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 05:18:35.436 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 05:18:44.451 [main] INFO  ktor.application - Application auto-reloaded in 8.987 seconds.
+2024-09-13 05:18:46.788 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 05:36:42.139 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 05:36:51.303 [main] INFO  ktor.application - Application auto-reloaded in 9.122 seconds.
+2024-09-13 05:36:53.631 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 05:39:10.895 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 05:39:19.834 [main] INFO  ktor.application - Application auto-reloaded in 8.916 seconds.
+2024-09-13 05:39:22.120 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 05:39:36.743 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-13 05:39:37.340 [eventLoopGroupProxy-4-1] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-13 05:39:37.340 [eventLoopGroupProxy-4-1] INFO  ktor.application - UserCredentials(email=ab@ab.pl, password=123, firstName=ab, lastName=ab)
+2024-09-13 05:40:25.180 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart retrievowany: null
+2024-09-13 05:40:31.517 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 05:40:31.518 [eventLoopGroupProxy-4-1] INFO  ktor.application - principal zaciagniety
+2024-09-13 05:40:31.519 [eventLoopGroupProxy-4-1] INFO  ktor.application - Email zaciagniety: ab@ab.pl
+2024-09-13 05:40:31.563 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart zaciagniety: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":6}]
+2024-09-13 05:40:31.564 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlozono do slownika
+2024-09-13 05:40:38.867 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart retrievowany: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":6}]
+2024-09-13 05:40:41.677 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 05:40:41.678 [eventLoopGroupProxy-4-1] INFO  ktor.application - principal zaciagniety
+2024-09-13 05:40:41.678 [eventLoopGroupProxy-4-1] INFO  ktor.application - Email zaciagniety: ab@ab.pl
+2024-09-13 05:40:41.680 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart zaciagniety: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":6}]
+2024-09-13 05:40:41.681 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlozono do slownika
+2024-09-13 06:01:09.864 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 06:01:18.746 [main] INFO  ktor.application - Application auto-reloaded in 8.851 seconds.
+2024-09-13 06:01:20.847 [DefaultDispatcher-worker-2] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 06:01:48.147 [eventLoopGroupProxy-4-2] ERROR ktor.application - Unhandled: GET - /auth/google/callback
+java.lang.ExceptionInInitializerError: null
+	at com.example.ApplicationKt.requestAccessToken(Application.kt:232)
+	at com.example.ApplicationKt$main$1$5$8.invokeSuspend(Application.kt:193)
+	at com.example.ApplicationKt$main$1$5$8.invoke(Application.kt)
+	at com.example.ApplicationKt$main$1$5$8.invoke(Application.kt)
+	at io.ktor.server.routing.Route$buildPipeline$1$1.invokeSuspend(Route.kt:116)
+	at io.ktor.server.routing.Route$buildPipeline$1$1.invoke(Route.kt)
+	at io.ktor.server.routing.Route$buildPipeline$1$1.invoke(Route.kt)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:123)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:81)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:101)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:77)
+	at io.ktor.server.routing.Routing$executeResult$$inlined$execute$1.invokeSuspend(Pipeline.kt:478)
+	at io.ktor.server.routing.Routing$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.routing.Routing$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:17)
+	at io.ktor.server.routing.Routing.executeResult(Routing.kt:174)
+	at io.ktor.server.routing.Routing.interceptor(Routing.kt:49)
+	at io.ktor.server.routing.Routing$Plugin$install$1.invokeSuspend(Routing.kt:124)
+	at io.ktor.server.routing.Routing$Plugin$install$1.invoke(Routing.kt)
+	at io.ktor.server.routing.Routing$Plugin$install$1.invoke(Routing.kt)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:123)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:81)
+	at io.ktor.server.engine.BaseApplicationEngineKt$installDefaultTransformationChecker$1.invokeSuspend(BaseApplicationEngine.kt:122)
+	at io.ktor.server.engine.BaseApplicationEngineKt$installDefaultTransformationChecker$1.invoke(BaseApplicationEngine.kt)
+	at io.ktor.server.engine.BaseApplicationEngineKt$installDefaultTransformationChecker$1.invoke(BaseApplicationEngine.kt)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:123)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:81)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:101)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:77)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:478)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:17)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invokeSuspend(DefaultEnginePipeline.kt:118)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:123)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:81)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:101)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:77)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:478)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:17)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1.invokeSuspend(NettyApplicationCallHandler.kt:119)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1.invoke(NettyApplicationCallHandler.kt)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1.invoke(NettyApplicationCallHandler.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at io.ktor.server.netty.NettyApplicationCallHandler.handleRequest(NettyApplicationCallHandler.kt:37)
+	at io.ktor.server.netty.NettyApplicationCallHandler.channelRead(NettyApplicationCallHandler.kt:29)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:61)
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:370)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda-1$lambda-0(NettyApplicationEngine.kt:263)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalStateException: Failed to find HTTP client engine implementation in the classpath: consider adding client engine dependency. See https://ktor.io/docs/http-client-engines.html
+	at io.ktor.client.HttpClientJvmKt.<clinit>(HttpClientJvm.kt:43)
+	... 65 common frames omitted
+2024-09-13 06:04:19.022 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 06:04:27.944 [main] INFO  ktor.application - Application auto-reloaded in 8.888 seconds.
+2024-09-13 06:04:30.144 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 06:12:55.506 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 06:13:04.436 [main] INFO  ktor.application - Application auto-reloaded in 8.906 seconds.
+2024-09-13 06:13:06.660 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 06:13:29.193 [eventLoopGroupProxy-4-3] ERROR ktor.application - Unhandled: GET - /auth/google/callback
+java.lang.ExceptionInInitializerError: null
+	at com.example.ApplicationKt.requestAccessToken(Application.kt:234)
+	at com.example.ApplicationKt$main$1$5$8.invokeSuspend(Application.kt:195)
+	at com.example.ApplicationKt$main$1$5$8.invoke(Application.kt)
+	at com.example.ApplicationKt$main$1$5$8.invoke(Application.kt)
+	at io.ktor.server.routing.Route$buildPipeline$1$1.invokeSuspend(Route.kt:116)
+	at io.ktor.server.routing.Route$buildPipeline$1$1.invoke(Route.kt)
+	at io.ktor.server.routing.Route$buildPipeline$1$1.invoke(Route.kt)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:123)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:81)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:101)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:77)
+	at io.ktor.server.routing.Routing$executeResult$$inlined$execute$1.invokeSuspend(Pipeline.kt:478)
+	at io.ktor.server.routing.Routing$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.routing.Routing$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:17)
+	at io.ktor.server.routing.Routing.executeResult(Routing.kt:174)
+	at io.ktor.server.routing.Routing.interceptor(Routing.kt:49)
+	at io.ktor.server.routing.Routing$Plugin$install$1.invokeSuspend(Routing.kt:124)
+	at io.ktor.server.routing.Routing$Plugin$install$1.invoke(Routing.kt)
+	at io.ktor.server.routing.Routing$Plugin$install$1.invoke(Routing.kt)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:123)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:81)
+	at io.ktor.server.engine.BaseApplicationEngineKt$installDefaultTransformationChecker$1.invokeSuspend(BaseApplicationEngine.kt:122)
+	at io.ktor.server.engine.BaseApplicationEngineKt$installDefaultTransformationChecker$1.invoke(BaseApplicationEngine.kt)
+	at io.ktor.server.engine.BaseApplicationEngineKt$installDefaultTransformationChecker$1.invoke(BaseApplicationEngine.kt)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:123)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:81)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:101)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:77)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:478)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:17)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invokeSuspend(DefaultEnginePipeline.kt:118)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:123)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:81)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:101)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:77)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:478)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:17)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1.invokeSuspend(NettyApplicationCallHandler.kt:119)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1.invoke(NettyApplicationCallHandler.kt)
+	at io.ktor.server.netty.NettyApplicationCallHandler$handleRequest$1.invoke(NettyApplicationCallHandler.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at io.ktor.server.netty.NettyApplicationCallHandler.handleRequest(NettyApplicationCallHandler.kt:37)
+	at io.ktor.server.netty.NettyApplicationCallHandler.channelRead(NettyApplicationCallHandler.kt:29)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:61)
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:370)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda-1$lambda-0(NettyApplicationEngine.kt:263)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalStateException: Failed to find HTTP client engine implementation in the classpath: consider adding client engine dependency. See https://ktor.io/docs/http-client-engines.html
+	at io.ktor.client.HttpClientJvmKt.<clinit>(HttpClientJvm.kt:43)
+	... 65 common frames omitted
+2024-09-13 06:18:01.955 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 06:18:10.402 [main] INFO  ktor.application - Application auto-reloaded in 8.416 seconds.
+2024-09-13 06:18:12.749 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 06:18:35.049 [eventLoopGroupProxy-4-2] ERROR ktor.application - Unhandled: GET - /auth/google/callback
+java.lang.Exception: No access token
+	at com.example.ApplicationKt.requestAccessToken(Application.kt:245)
+	at com.example.ApplicationKt$requestAccessToken$1.invokeSuspend(Application.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:138)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:112)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:14)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:62)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:138)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:112)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:14)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:62)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:138)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:112)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:14)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:62)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:138)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:112)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:14)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:62)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda-1$lambda-0(NettyApplicationEngine.kt:263)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2024-09-13 06:37:17.860 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 06:37:27.061 [main] INFO  ktor.application - Application auto-reloaded in 9.169 seconds.
+2024-09-13 06:37:29.196 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 06:43:42.758 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 06:43:51.830 [main] INFO  ktor.application - Application auto-reloaded in 9.04 seconds.
+2024-09-13 06:43:54.249 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 06:44:12.277 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "error": "invalid_client",
+  "error_description": "Unauthorized"
+}
+2024-09-13 06:44:12.383 [eventLoopGroupProxy-4-2] ERROR ktor.application - Unhandled: GET - /auth/google/callback
+java.lang.Exception: No access token
+	at com.example.ApplicationKt$main$1$5$8.invokeSuspend$requestAccessToken(Application.kt:203)
+	at com.example.ApplicationKt$main$1$5$8.access$invokeSuspend$requestAccessToken(Application.kt)
+	at com.example.ApplicationKt$main$1$5$8$requestAccessToken$1.invokeSuspend(Application.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:138)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:112)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:14)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:62)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:138)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:112)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:14)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:62)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:138)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:112)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:14)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:62)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:138)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:112)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:14)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:62)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda-1$lambda-0(NettyApplicationEngine.kt:263)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2024-09-13 06:45:54.796 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "error": "invalid_client",
+  "error_description": "Unauthorized"
+}
+2024-09-13 06:45:54.797 [eventLoopGroupProxy-4-2] ERROR ktor.application - Unhandled: GET - /auth/google/callback
+java.lang.Exception: No access token
+	at com.example.ApplicationKt$main$1$5$8.invokeSuspend$requestAccessToken(Application.kt:203)
+	at com.example.ApplicationKt$main$1$5$8.access$invokeSuspend$requestAccessToken(Application.kt)
+	at com.example.ApplicationKt$main$1$5$8$requestAccessToken$1.invokeSuspend(Application.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:138)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:112)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:14)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:62)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:138)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:112)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:14)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:62)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:138)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:112)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:14)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:62)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:138)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:112)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:14)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:62)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:503)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda-1$lambda-0(NettyApplicationEngine.kt:263)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2024-09-13 06:57:38.829 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 06:57:47.856 [main] INFO  ktor.application - Application auto-reloaded in 9.0 seconds.
+2024-09-13 06:57:50.440 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 06:58:12.086 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "access_token": "ya29.a0AcM612yVwc-yNJ9C1CjL0fm6qa6nKwAnytKa9zRj57h7jlAmu3gnIqE-64jsQ6AKBVv3rA6cEwE7LRK2KvfdQfcAqS6NftigQarHYneeemKpsN5xa6_dUBg--HwBH8DepCZRAAKjk6h0S1v5y2nP1MAAjPjgRPq33MTbj0uTaCgYKAWoSARMSFQHGX2Mite42PY0U591T2hMudXk0BQ0175",
+  "expires_in": 3599,
+  "scope": "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid",
+  "token_type": "Bearer",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ3YjkzOTc3MWE3ODAwYzQxM2Y5MDA1MTAxMmQ5NzU5ODE5MTZkNzEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEyMDczOTE4NDk0ODAzMTIxMTMiLCJlbWFpbCI6ImFwLmhlcm1pdEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6ImtlaWg0WG9VNE9jSFNJZHpfZWdGaHciLCJuYW1lIjoiQW5kcmV3IEhlcm1pdCIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKVDB1RHRCbTZXNDQwNlNKMWE0U1VlWGtLTWZmQlVZNGFVUFRSblZXcXF5SkNIeVBBPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkFuZHJldyIsImZhbWlseV9uYW1lIjoiSGVybWl0IiwiaWF0IjoxNzI2MjAzNDkyLCJleHAiOjE3MjYyMDcwOTJ9.B-7dgJ4-XGSdCtEaCizuru3pEZ_Se-_sve2-xbNf_MGqCUkq55BTbvInbBBYDVosh8fcL_c4UfBHmjC-S8NQPNZlCkC_pgHGhb69WRILgocI-nPECNuJ_Xan7rYTAxN3OSZj86KIr9dT52S4p_PdXRp6bvJsSy6yn3AOXAMJzsFFr_xUwuRgRgDkTdi3JlmxFU0NwoC79WtFKzth_AV83-1sKTzL0hksOzuD3SLUgSubcE_77SZnjC-A5Ja1APuUfXNdJJQsAWTLmrWLsu9uba9H2z4e8cUgFLcuVWPHfMrlShwiC14AThjq2El7KNmhhDEU8tAhe4-3AfaobMP6lg"
+}
+2024-09-13 06:58:12.331 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "id": "111207391849480312113",
+  "email": "ap.hermit@gmail.com",
+  "verified_email": true,
+  "name": "Andrew Hermit",
+  "given_name": "Andrew",
+  "family_name": "Hermit",
+  "picture": "https://lh3.googleusercontent.com/a/ACg8ocJT0uDtBm6W4406SJ1a4SUeXkKMffBUY4aUPTRnVWqqyJCHyPA=s96-c"
+}
+
+2024-09-13 06:58:12.495 [eventLoopGroupProxy-4-2] INFO  ktor.application - Created new user with Google OAuth: ap.hermit@gmail.com
+2024-09-13 06:59:47.707 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "access_token": "ya29.a0AcM612wE66HTL2580eZS7F4-nJyxRQ-8Xr3gQ_oVJrRLHMLDQLdagyYhERYHZyB0oPLjNa3G_iazHduCyn_j2e2886tNzZSZsPACoN4HKGviEKLFDhv8kigPSL7NBSSehO5bsT45gxYF44GvHMbiai2CrxMNYNegIQgUkSv7aCgYKAcISARMSFQHGX2MiLxTpJkYjLIBKm_5mxgtcwg0175",
+  "expires_in": 3599,
+  "scope": "openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile",
+  "token_type": "Bearer",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ3YjkzOTc3MWE3ODAwYzQxM2Y5MDA1MTAxMmQ5NzU5ODE5MTZkNzEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEyMDczOTE4NDk0ODAzMTIxMTMiLCJlbWFpbCI6ImFwLmhlcm1pdEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6InV3ckh4akNvcEpJM19jUU5mS2plS1EiLCJuYW1lIjoiQW5kcmV3IEhlcm1pdCIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKVDB1RHRCbTZXNDQwNlNKMWE0U1VlWGtLTWZmQlVZNGFVUFRSblZXcXF5SkNIeVBBPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkFuZHJldyIsImZhbWlseV9uYW1lIjoiSGVybWl0IiwiaWF0IjoxNzI2MjAzNTg4LCJleHAiOjE3MjYyMDcxODh9.j0ea46RC9pQMlMIbhM14NHojXdkSAp9UzCK2y2xYau-_Cja4-3fmH4zkDkBRPfSTtO5D_FfNf88eyKcq6DdKnh2fy1BM8GM3AIOTwqvd8v5oYAt5U7V1zVcv4FT8zge3WZMxj_xMxUB8yU8xi6mnp4wBHSzWcx2FfrxzPdhp_GQ2J67fhyIDc8Q-csLk42pghWGyO41lbCzX_91iUii0bpC8eJgldVnOvKdvO8k77GSatC3CMRIvXuKOfXQjMeB5cslxPIsNfEESFOzg1bnhGMH67UCgd1B0V_Gs_qJK-1rd4w01bd-zKbFw2CloFmWMFRpqZb_n2ywwFOBQFF4TGg"
+}
+2024-09-13 06:59:47.839 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "id": "111207391849480312113",
+  "email": "ap.hermit@gmail.com",
+  "verified_email": true,
+  "name": "Andrew Hermit",
+  "given_name": "Andrew",
+  "family_name": "Hermit",
+  "picture": "https://lh3.googleusercontent.com/a/ACg8ocJT0uDtBm6W4406SJ1a4SUeXkKMffBUY4aUPTRnVWqqyJCHyPA=s96-c"
+}
+
+2024-09-13 06:59:47.840 [eventLoopGroupProxy-4-2] INFO  ktor.application - Existing user logged in with Google OAuth: ap.hermit@gmail.com
+2024-09-13 07:08:01.945 [eventLoopGroupProxy-4-5] INFO  ktor.application - {
+  "access_token": "ya29.a0AcM612zsbKNT_aMmZjy6f6SMdxA8DClAEL_e3TQxNN9rkAjFjpFyMLefBeDFkSEP0POwa_I_yfIM4yyHliNsSUmWhso2taJ1aX2qEYs3RNSOR0MSwu-tVZ_4kOaKUQGc7jsK92WLGQgjhPJTohscF1zWSqBux1kUi6hLNDZTaCgYKAdQSARMSFQHGX2MiOBZmy3KN0AI6-2gBTlTqpg0175",
+  "expires_in": 3599,
+  "scope": "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid",
+  "token_type": "Bearer",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ3YjkzOTc3MWE3ODAwYzQxM2Y5MDA1MTAxMmQ5NzU5ODE5MTZkNzEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEyMDczOTE4NDk0ODAzMTIxMTMiLCJlbWFpbCI6ImFwLmhlcm1pdEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkZNa0RwNGVuTmxnSm9tVnV1ZU9nTnciLCJuYW1lIjoiQW5kcmV3IEhlcm1pdCIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKVDB1RHRCbTZXNDQwNlNKMWE0U1VlWGtLTWZmQlVZNGFVUFRSblZXcXF5SkNIeVBBPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkFuZHJldyIsImZhbWlseV9uYW1lIjoiSGVybWl0IiwiaWF0IjoxNzI2MjA0MDgyLCJleHAiOjE3MjYyMDc2ODJ9.OZ_pBFOM1s7f_ioff-R_kmMFhzojb6AfCTV-6YkWrSt4VbFISYbs9b2noepi_cNfjIVm1rqq5xiGyhMzG2eCi9y2cVYWg8brz0F_2v4vEEtyPL7NemEUENMWqkfHschH9zT0y13sryEsZXPmSjfiu1FIN4p-P9h-zaJvpElJx5psXaqnl8H1T8-0qoZDR8a4TfV_NoRrVrSWxYGQpmGEowqnv2UxZmZxWXMRAb3cVf-vu0Y-cwBrknebwFuyaZiY76Dws5Aut7H-k9uJa5MpCEYwRMKIwp9uqmjZdiKzMKQ0pbEmMQa2vt03A_Psm8QGC8SMXTDFpOjMpClWuJV4rQ"
+}
+2024-09-13 07:08:02.116 [eventLoopGroupProxy-4-5] INFO  ktor.application - {
+  "id": "111207391849480312113",
+  "email": "ap.hermit@gmail.com",
+  "verified_email": true,
+  "name": "Andrew Hermit",
+  "given_name": "Andrew",
+  "family_name": "Hermit",
+  "picture": "https://lh3.googleusercontent.com/a/ACg8ocJT0uDtBm6W4406SJ1a4SUeXkKMffBUY4aUPTRnVWqqyJCHyPA=s96-c"
+}
+
+2024-09-13 07:08:02.117 [eventLoopGroupProxy-4-5] INFO  ktor.application - Existing user logged in with Google OAuth: ap.hermit@gmail.com
+2024-09-13 07:08:45.307 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 07:08:54.201 [main] INFO  ktor.application - Application auto-reloaded in 8.859 seconds.
+2024-09-13 07:08:56.445 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 07:09:11.919 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "access_token": "ya29.a0AcM612zSCQNisMasQKfyH2t_ZBZIt_jLOhRRidi6z8szGFmgG12cLZlVT5J6XxBx8Oka_dEca5R6hS5aj5518kJFaz7KxVHQ1S_Mbz_oKlhO2lj7l55tM_7kMCOhBn75cszcCuE7bvqsEwNZW8EmDJbBUmtVeVpiZGnqFgTWaCgYKAeISARMSFQHGX2MiREf0uEfVOQcSoTX2rgBRkw0175",
+  "expires_in": 3599,
+  "scope": "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid",
+  "token_type": "Bearer",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ3YjkzOTc3MWE3ODAwYzQxM2Y5MDA1MTAxMmQ5NzU5ODE5MTZkNzEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEyMDczOTE4NDk0ODAzMTIxMTMiLCJlbWFpbCI6ImFwLmhlcm1pdEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6Ilkwc1Jmb2JHS0NpRjgzYXM3bGRSOHciLCJuYW1lIjoiQW5kcmV3IEhlcm1pdCIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKVDB1RHRCbTZXNDQwNlNKMWE0U1VlWGtLTWZmQlVZNGFVUFRSblZXcXF5SkNIeVBBPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkFuZHJldyIsImZhbWlseV9uYW1lIjoiSGVybWl0IiwiaWF0IjoxNzI2MjA0MTUxLCJleHAiOjE3MjYyMDc3NTF9.wFkX6eh9H6jZsfgru5EpF-Vwi6gcAcJrqigd14j8JyxTZICog6Qv2T6D5eGudxgEHJ55ekoOP6ch7w4B0rw3_kf5S6HGEF5J09mSFb19Ea2DpAOFff1_S0sbnk0RD8eqt8Oj7xDO6uZ0Phv-E5JGbjsgsvU2Sa0J04CilvzVEd-IxnzdlqorHUH6Spx4u8rswYcUvRibr8Ws71LwIFft_D0ixOU8jo8gErBRRZSkXcGCAOhTJJP3zMHLwVVZRuFb49LodXTkmO8wo3K2QCkXhVFroB2Ri4poDySjCplZPduNErgsrD_5T7COKUk_vr9Tcpezcx2vhMtUYQ7Awv3RHg"
+}
+2024-09-13 07:09:12.112 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "id": "111207391849480312113",
+  "email": "ap.hermit@gmail.com",
+  "verified_email": true,
+  "name": "Andrew Hermit",
+  "given_name": "Andrew",
+  "family_name": "Hermit",
+  "picture": "https://lh3.googleusercontent.com/a/ACg8ocJT0uDtBm6W4406SJ1a4SUeXkKMffBUY4aUPTRnVWqqyJCHyPA=s96-c"
+}
+
+2024-09-13 07:09:12.295 [eventLoopGroupProxy-4-2] INFO  ktor.application - Created new user with Google OAuth: ap.hermit@gmail.com
+2024-09-13 07:09:13.714 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart retrievowany: null
+2024-09-13 07:09:23.381 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 07:09:23.382 [eventLoopGroupProxy-4-1] INFO  ktor.application - principal zaciagniety
+2024-09-13 07:09:23.383 [eventLoopGroupProxy-4-1] INFO  ktor.application - Email zaciagniety: ap.hermit@gmail.com
+2024-09-13 07:09:23.521 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart zaciagniety: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":9}]
+2024-09-13 07:09:23.521 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlozono do slownika
+2024-09-13 07:09:31.327 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "access_token": "ya29.a0AcM612wVjuk-ju50O0aCpROnWz-VEkI-wwrcR6-t0RGeolUlv3jPjKBSc10s-KfrUa5TpSsmZAbqa7PzNACK4bLEY9TaMKe_f9pawUNT-3c-z75gnZWrnANzM94RjDcQ7xDDmFkO3ckLAlN7Af0yNqGCaOQ3n5yVW-_eayxcaCgYKAaUSARMSFQHGX2MijdTWx66Q4jmKI-x798uOvg0175",
+  "expires_in": 3599,
+  "scope": "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid",
+  "token_type": "Bearer",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ3YjkzOTc3MWE3ODAwYzQxM2Y5MDA1MTAxMmQ5NzU5ODE5MTZkNzEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMTEyMDczOTE4NDk0ODAzMTIxMTMiLCJlbWFpbCI6ImFwLmhlcm1pdEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6InJjalNDLWYwTTZOQzI3bWhlcUhqaUEiLCJuYW1lIjoiQW5kcmV3IEhlcm1pdCIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKVDB1RHRCbTZXNDQwNlNKMWE0U1VlWGtLTWZmQlVZNGFVUFRSblZXcXF5SkNIeVBBPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkFuZHJldyIsImZhbWlseV9uYW1lIjoiSGVybWl0IiwiaWF0IjoxNzI2MjA0MTcxLCJleHAiOjE3MjYyMDc3NzF9.nCUEgi5e70oCug7kAqBwKtObmhXGtcRb4gesfkyHjy9Gf27l2yTilFiH0dcublU1IC3Pg9Iyr2vNVMRCzZ1RTYfE0iH5ucO8NdelykvhDzVQpNOTDRj7CT777_aaxtsvVWUqI8zLmkr1qq-EjQOCEUM2LN_a7yX7R-9HiOBf-Vo7-TkGYCbDMr7pRuop8ArT6RZ-7C9L5yrQMZt4LPBMm-u4m48Q9XRY57ZuGk7TI12HlyFrJgpI9_2w-1ccvjo-4TTfUNLCHqqufTcbLHnuPeAwBxb10mD3_OadGImThbLz64eIAlNknUSLBDoHvKMc1ZNJCZrHrO5Nj4ErZ7eNQw"
+}
+2024-09-13 07:09:31.449 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "id": "111207391849480312113",
+  "email": "ap.hermit@gmail.com",
+  "verified_email": true,
+  "name": "Andrew Hermit",
+  "given_name": "Andrew",
+  "family_name": "Hermit",
+  "picture": "https://lh3.googleusercontent.com/a/ACg8ocJT0uDtBm6W4406SJ1a4SUeXkKMffBUY4aUPTRnVWqqyJCHyPA=s96-c"
+}
+
+2024-09-13 07:09:31.450 [eventLoopGroupProxy-4-2] INFO  ktor.application - Existing user logged in with Google OAuth: ap.hermit@gmail.com
+2024-09-13 07:09:31.879 [eventLoopGroupProxy-4-3] INFO  ktor.application - Cart retrievowany: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":3,"name":"Lithium","description":"Keep it submerged and you'll be fine","price":20,"img":"/resources/lithium.jpg","qty":9}]
+2024-09-13 07:09:39.037 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 07:09:39.037 [eventLoopGroupProxy-4-1] INFO  ktor.application - principal zaciagniety
+2024-09-13 07:09:39.038 [eventLoopGroupProxy-4-1] INFO  ktor.application - Email zaciagniety: ap.hermit@gmail.com
+2024-09-13 07:09:39.039 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart zaciagniety: []
+2024-09-13 07:09:39.040 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlozono do slownika
+2024-09-13 07:24:32.341 [main] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2024-09-13 07:24:40.720 [main] INFO  ktor.application - Application auto-reloaded in 8.354 seconds.
+2024-09-13 07:24:42.816 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://0.0.0.0:9000
+2024-09-13 07:25:15.425 [eventLoopGroupProxy-4-1] INFO  ktor.application - Incoming payment request: {"firstName":"Andrzej","lastName":"Pustlenik","email":"abc@google.com"}
+2024-09-13 07:25:42.777 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do rejestracji
+2024-09-13 07:25:43.015 [eventLoopGroupProxy-4-1] INFO  ktor.application - po wyciagnieciu credentiali
+2024-09-13 07:25:43.015 [eventLoopGroupProxy-4-1] INFO  ktor.application - UserCredentials(email=a@b.pl, password=123, firstName=A, lastName=B)
+2024-09-13 07:25:56.261 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart retrievowany: null
+2024-09-13 07:26:09.060 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 07:26:09.061 [eventLoopGroupProxy-4-1] INFO  ktor.application - principal zaciagniety
+2024-09-13 07:26:09.061 [eventLoopGroupProxy-4-1] INFO  ktor.application - Email zaciagniety: a@b.pl
+2024-09-13 07:26:09.096 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart zaciagniety: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":4},{"id":5,"name":"Titanium","description":"For bones, bicycles, rockets!","price":55,"img":"/resources/titanium.jpg","qty":5}]
+2024-09-13 07:26:09.096 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlozono do slownika
+2024-09-13 07:26:17.127 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart retrievowany: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":4},{"id":5,"name":"Titanium","description":"For bones, bicycles, rockets!","price":55,"img":"/resources/titanium.jpg","qty":5}]
+2024-09-13 07:26:23.395 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 07:26:23.396 [eventLoopGroupProxy-4-1] INFO  ktor.application - principal zaciagniety
+2024-09-13 07:26:23.396 [eventLoopGroupProxy-4-1] INFO  ktor.application - Email zaciagniety: a@b.pl
+2024-09-13 07:26:23.398 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart zaciagniety: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":4},{"id":5,"name":"Titanium","description":"For bones, bicycles, rockets!","price":55,"img":"/resources/titanium.jpg","qty":5}]
+2024-09-13 07:26:23.398 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlozono do slownika
+2024-09-13 07:26:42.583 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "access_token": "ya29.a0AcM612xkEisFX7j9uykZumEARnDZcyKv9S8KG3cFsY3obnwV4FTik5aE9fOntW-mjmyFxBpWyohhSzQeAN3fRo4vPNGSOAAbWkGp9XaHvkPL69fYhtkOZHQFJYCDUe5YfGveSkwnXhL2z7A7uI0uYQu61xeNSmq4ke6V65tqaCgYKAV4SARMSFQHGX2Mid7U40ZEKHFer6MjscMsHww0175",
+  "expires_in": 3599,
+  "scope": "openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile",
+  "token_type": "Bearer",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ3YjkzOTc3MWE3ODAwYzQxM2Y5MDA1MTAxMmQ5NzU5ODE5MTZkNzEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDQ2NTA3NDE2NTc4ODY2NTI3NDkiLCJlbWFpbCI6ImFidWxhYWJkYUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IkIwSGdLekhOVDZ5RnJLRzM4dDVfYnciLCJuYW1lIjoiVGhvbWFzIFNjaG1pZHQiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS1lTT0Y5R2JZVTZvMHFfRDRwS0lVTXZ2OVJVeGkyY29VMXFyb1Q1eDhkYV9yYUhRPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IlRob21hcyIsImZhbWlseV9uYW1lIjoiU2NobWlkdCIsImlhdCI6MTcyNjIwNTIwMiwiZXhwIjoxNzI2MjA4ODAyfQ.uwF0v_2bWxu7O7mGCIC_6nmUEfrvkpAWvGceH8YFMVbPY-cHuqQtY_3HvODsq5rIQzlPi4XEBc5_tIFv3dhW4KCF7nVYD_NKnrgApfeSfeCHsYaW--IJP4rLRs_iOiRuchpHfvozbyChEommwNl5ueXls24XNKSPh1_abXQGngYm2F4er1wj9od2Gm6BgaNUUsfH2-cXm29DqGudsIfs1tBRj4DHhSfdXeahcN7qETjNZkI60dnIz9Tbhk1ueZd58rwXhPjTswhwq4uvjJmMH5yt5Iap-c6Da-gtnCDeW9HwGYfhz_u4f2PGs2drEPFsyxy2GlBlhIMw-IXi93YX7g"
+}
+2024-09-13 07:26:42.785 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "id": "104650741657886652749",
+  "email": "abulaabda@gmail.com",
+  "verified_email": true,
+  "name": "Thomas Schmidt",
+  "given_name": "Thomas",
+  "family_name": "Schmidt",
+  "picture": "https://lh3.googleusercontent.com/a/ACg8ocKYSOF9GbYU6o0q_D4pKIUMvv9RUxi2coU1qroT5x8da_raHQ=s96-c"
+}
+
+2024-09-13 07:26:42.907 [eventLoopGroupProxy-4-2] INFO  ktor.application - Created new user with Google OAuth: abulaabda@gmail.com
+2024-09-13 07:26:43.234 [eventLoopGroupProxy-4-3] INFO  ktor.application - Cart retrievowany: null
+2024-09-13 07:26:50.771 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlazlem do update_cart
+2024-09-13 07:26:50.772 [eventLoopGroupProxy-4-1] INFO  ktor.application - principal zaciagniety
+2024-09-13 07:26:50.773 [eventLoopGroupProxy-4-1] INFO  ktor.application - Email zaciagniety: abulaabda@gmail.com
+2024-09-13 07:26:50.775 [eventLoopGroupProxy-4-1] INFO  ktor.application - Cart zaciagniety: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":4,"name":"Magnesium","description":"Say goodbye to cramps!","price":16,"img":"/resources/magnesium.jpg","qty":1},{"id":7,"name":"Sulfur","description":"For all your stinky needs!","price":11,"img":"/resources/sulfur.jpg","qty":1}]
+2024-09-13 07:26:50.775 [eventLoopGroupProxy-4-1] INFO  ktor.application - Wlozono do slownika
+2024-09-13 07:26:58.654 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "access_token": "ya29.a0AcM612xY4WhjBck0QFTkVpWz3N8bC2N0JfFjt96cwON1ebo93oiW7BolNCfgEB5jLcz62fDTJRfebgYvbyexaLgUXqzWwP8AGIX8en1ti3beJDbrp19sFLNBXV1a1SgsL4TOOjBWDS0O8m9bLzH3XhMOLNczjkLsP0zCs-GSaCgYKASESARMSFQHGX2Miyuf00qrtxuEvkFiiqCiB3g0175",
+  "expires_in": 3599,
+  "scope": "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid",
+  "token_type": "Bearer",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ3YjkzOTc3MWE3ODAwYzQxM2Y5MDA1MTAxMmQ5NzU5ODE5MTZkNzEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI3MTI0OTA3NDg5OTMtcWc1M2txcWswYTRiN2JlMGI2Ymh0dGZ1YmprdTNtaGIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDQ2NTA3NDE2NTc4ODY2NTI3NDkiLCJlbWFpbCI6ImFidWxhYWJkYUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IktSNndpZlYyQTRBSDQzVm81STNORnciLCJuYW1lIjoiVGhvbWFzIFNjaG1pZHQiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jS1lTT0Y5R2JZVTZvMHFfRDRwS0lVTXZ2OVJVeGkyY29VMXFyb1Q1eDhkYV9yYUhRPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IlRob21hcyIsImZhbWlseV9uYW1lIjoiU2NobWlkdCIsImlhdCI6MTcyNjIwNTIxOSwiZXhwIjoxNzI2MjA4ODE5fQ.Gep8qHXFhFcp7rgriJbxzWDbjxkAtkOomJUgcZpjmBxOPv1iVuAGOZ2HQ-U0hUvSBgbEhAK72qW1CjA_T9IzDUym33Vh_CLhAmyCg9jKZwkBaCwlRHSOW-pgnDsL2JPeLPIOAVO1Qfh_VZs9iIzU2VunXfaXqgCEZ9AG7YykVtSNbm0hQjn5KEdk40kSEyXvzopybooDGCcQcAcBOYzL70QXylQQHZqQOMQNwTp2a2x0TEKdleLIUG4rFQgn__7OTCxAYK-RjTwmJq9X3018wLfvtB3IYO6VDFKklMTTJ8p_2kkl5StzuJ-5Unat3m_PXY2RbLosG6TnubA1FBx3gg"
+}
+2024-09-13 07:26:58.769 [eventLoopGroupProxy-4-2] INFO  ktor.application - {
+  "id": "104650741657886652749",
+  "email": "abulaabda@gmail.com",
+  "verified_email": true,
+  "name": "Thomas Schmidt",
+  "given_name": "Thomas",
+  "family_name": "Schmidt",
+  "picture": "https://lh3.googleusercontent.com/a/ACg8ocKYSOF9GbYU6o0q_D4pKIUMvv9RUxi2coU1qroT5x8da_raHQ=s96-c"
+}
+
+2024-09-13 07:26:58.770 [eventLoopGroupProxy-4-2] INFO  ktor.application - Existing user logged in with Google OAuth: abulaabda@gmail.com
+2024-09-13 07:26:59.171 [eventLoopGroupProxy-4-3] INFO  ktor.application - Cart retrievowany: [{"id":2,"name":"Gold","description":"Tech-grade gold!","price":67,"img":"/resources/gold.jpg","qty":1},{"id":4,"name":"Magnesium","description":"Say goodbye to cramps!","price":16,"img":"/resources/magnesium.jpg","qty":1},{"id":7,"name":"Sulfur","description":"For all your stinky needs!","price":11,"img":"/resources/sulfur.jpg","qty":1}]
